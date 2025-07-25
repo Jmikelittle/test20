@@ -11,21 +11,54 @@ This repository contains a complete implementation guide for using Twenty CRM to
 - **Native plants database** with growing conditions
 - **Geographic service areas** and volunteer coordination
 
+## 🏗️ Architecture
+
+### Fork-Based Development Structure
+```
+test20/                                    # Main project repository
+├── twenty-reference/                      # Stock Twenty CRM (reference only)
+├── twenty-gardening/                      # Your fork (modifications)
+├── docker-compose-fork.yml               # Fork-based Docker setup
+├── docker-compose.yml                    # Original Docker setup
+├── gardening-project-data/               # Sample data for testing
+├── start-gardening-project.ps1           # Startup script
+└── setup-fork-workflow.ps1              # Fork setup script
+```
+
+### Benefits of Fork-Based Approach
+- **🔒 Isolation**: Your changes don't affect the reference installation
+- **🔄 Updates**: Easy to pull upstream improvements from Twenty
+- **🎯 Focus**: Clear separation of stock vs custom code
+- **🚀 Deployment**: Your fork can be deployed independently
+- **🤝 Contribution**: Easy to contribute improvements back to Twenty
+
 ## 🚀 Quick Start
 
-### Option 1: Docker Setup (Recommended)
+### Option 1: Fork-Based Setup (Recommended)
 ```powershell
-# Start the containerized CRM
+# 1. Set up fork-based workflow
+.\setup-fork-workflow.ps1
+
+# 2. Start the project
+.\start-gardening-project.ps1
+
+# Access at http://localhost:3001
+# Login: tim@apple.dev / Applecar2025
+```
+
+### Option 2: Reference Setup (Current)
+```powershell
+# Start with existing setup
 .\start-gardening-project.ps1
 
 # Or manually with Docker Compose
 docker-compose up -d
 
 # Access at http://localhost:3001
-# Login: tim@apple.dev / tim@apple.dev
+# Login: tim@apple.dev / Applecar2025
 ```
 
-### Option 2: Development Setup
+### Option 3: Development Setup
 1. **Setup Guide**: See [GARDENING_PROJECT_SETUP.md](GARDENING_PROJECT_SETUP.md)
 2. **Customization**: Follow [CUSTOMIZATION_GUIDE.md](CUSTOMIZATION_GUIDE.md)
 3. **Automation**: Run `setup-gardening-project.ps1` for automated setup
