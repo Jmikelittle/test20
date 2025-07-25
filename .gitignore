@@ -1,0 +1,60 @@
+# Node.js dependencies
+twenty/node_modules/
+twenty/.nx/cache/
+twenty/dist/
+twenty/build/
+
+# Twenty CRM specific
+twenty/packages/*/dist/
+twenty/packages/*/.env
+twenty/.env
+twenty/.env.local
+
+# Docker volumes and data
+twenty/docker-data/
+twenty/postgres-data/
+twenty/redis-data/
+
+# IDE and editor files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+twenty/logs/
+twenty/*.log
+
+# Runtime data
+twenty/pids/
+twenty/*.pid
+twenty/*.seed
+twenty/*.pid.lock
+
+# Temporary files
+twenty/tmp/
+twenty/.tmp/
+
+# Coverage directory used by tools like istanbul
+twenty/coverage/
+twenty/.nyc_output/
+
+# Dependency directories
+twenty/.pnp.*
+
+# Yarn
+twenty/.yarn/cache/
+twenty/.yarn/unplugged/
+twenty/.yarn/build-state.yml
+twenty/.yarn/install-state.gz
