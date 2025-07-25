@@ -13,6 +13,19 @@ This repository contains a complete implementation guide for using Twenty CRM to
 
 ## 🚀 Quick Start
 
+### Option 1: Docker Setup (Recommended)
+```powershell
+# Start the containerized CRM
+.\start-gardening-project.ps1
+
+# Or manually with Docker Compose
+docker-compose up -d
+
+# Access at http://localhost:3001
+# Login: tim@apple.dev / tim@apple.dev
+```
+
+### Option 2: Development Setup
 1. **Setup Guide**: See [GARDENING_PROJECT_SETUP.md](GARDENING_PROJECT_SETUP.md)
 2. **Customization**: Follow [CUSTOMIZATION_GUIDE.md](CUSTOMIZATION_GUIDE.md)
 3. **Automation**: Run `setup-gardening-project.ps1` for automated setup
@@ -30,7 +43,10 @@ Complete English and French interface support:
 test20/
 ├── GARDENING_PROJECT_SETUP.md     # Complete setup guide (EN/FR)
 ├── CUSTOMIZATION_GUIDE.md         # Step-by-step customization
-├── setup-gardening-project.ps1    # Automated PowerShell setup
+├── docker-compose.yml             # Docker container configuration
+├── .env                           # Environment variables
+├── start-gardening-project.ps1    # Automated Docker startup
+├── setup-gardening-project.ps1    # Development setup (alternative)
 ├── gardening-project-data/        # Sample CSV files (EN + FR)
 │   ├── sample_homeowners.csv      # English sample data
 │   ├── proprietaires_echantillon.csv  # French sample data
@@ -38,7 +54,7 @@ test20/
 │   ├── benevoles_echantillon.csv
 │   ├── native_plants_database.csv
 │   └── base_donnees_plantes_indigenes.csv
-└── twenty/                        # Twenty CRM source code
+└── twenty/                        # Twenty CRM source code (reference)
 ```
 
 ## ✨ Key Features

@@ -5,6 +5,45 @@ twenty/dist/
 twenty/build/
 
 # Twenty CRM specific
+twenty/node_modules/
+twenty/.nx/
+twenty/dist/
+twenty/.local-storage/
+twenty/packages/*/dist/
+twenty/packages/*/.env
+twenty/packages/*/node_modules/
+
+# Docker volumes and data
+db-data/
+server-local-data/
+.docker/
+
+# Environment files (keep .env.example, ignore .env)
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
 twenty/packages/*/dist/
 twenty/packages/*/.env
 twenty/.env
