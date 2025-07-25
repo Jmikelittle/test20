@@ -7,11 +7,11 @@ Write-Host "=" * 50
 # Check current setup and determine which Docker Compose file to use
 Write-Host "Detecting project setup..." -ForegroundColor Yellow
 
-if (Test-Path "twenty-gardening" -and (Get-ChildItem "twenty-gardening" -Force | Measure-Object).Count -gt 0) {
+if ((Test-Path "twenty-gardening") -and (Get-ChildItem "twenty-gardening" -Force -ErrorAction SilentlyContinue | Measure-Object).Count -gt 0) {
     Write-Host "✅ Using fork-based setup (twenty-gardening/)" -ForegroundColor Green
     $composeFile = "docker-compose-fork.yml"
     $setupType = "fork"
-} elseif (Test-Path "twenty" -and (Get-ChildItem "twenty" -Force | Measure-Object).Count -gt 0) {
+} elseif ((Test-Path "twenty") -and (Get-ChildItem "twenty" -Force -ErrorAction SilentlyContinue | Measure-Object).Count -gt 0) {
     Write-Host "⚠️  Using reference setup (twenty/) - consider upgrading to fork" -ForegroundColor Yellow
     $composeFile = "docker-compose.yml"
     $setupType = "reference"

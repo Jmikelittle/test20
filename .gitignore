@@ -97,3 +97,13 @@ twenty/.yarn/cache/
 twenty/.yarn/unplugged/
 twenty/.yarn/build-state.yml
 twenty/.yarn/install-state.gz
+
+# Fork-based development
+twenty-reference/
+twenty-gardening/
+ARCHIVED_CONTENT.md
+
+# Development artifacts
+*.log
+.DS_Store
+Thumbs.db

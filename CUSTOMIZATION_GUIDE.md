@@ -1,5 +1,19 @@
 # Twenty CRM Customization Guide for Gardening Project
 
+## 🔗 Development Workflow
+
+**⚠️ IMPORTANT: This guide assumes you're using the fork-based workflow.**
+
+### Before Customizing:
+1. **Set up fork workflow**: Run `.\setup-fork-workflow.ps1`
+2. **Create your fork**: https://github.com/twentyhq/twenty → Fork
+3. **Clone your fork**: `git clone https://github.com/Jmikelittle/twenty.git twenty-gardening`
+4. **Start development**: `.\start-gardening-project.ps1`
+
+📚 **For detailed development workflow**: See `FORK_WORKFLOW_GUIDE.md`
+
+---
+
 ## Quick Start Checklist
 
 After running the setup script and accessing Twenty at http://localhost:3001:

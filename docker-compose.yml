@@ -1,8 +1,24 @@
+# ========================================================
+# REFERENCE DOCKER COMPOSE - ORIGINAL SETUP
+# ========================================================
+# This is the original Docker Compose configuration.
+# 
+# ⚠️  FOR NEW DEVELOPMENT, USE: docker-compose-fork.yml
+# ✅ This file is kept for reference and comparison
+# 
+# To use fork-based development:
+# 1. Run: .\setup-fork-workflow.ps1
+# 2. Start: .\start-gardening-project.ps1 (auto-detects fork)
+# 
+# This file uses the pre-built Twenty CRM image
+# The fork-based setup builds from your customized source
+# ========================================================
+
 name: gardening-project-twenty
 
 services:
   server:
-    image: twentycrm/twenty:${TAG:-latest}
+    image: twentycrm/twenty:v0.33.1
     volumes:
       - server-local-data:/app/packages/twenty-server/.local-storage
       - ./gardening-project-data:/app/data
@@ -13,7 +29,7 @@ services:
       PG_DATABASE_URL: postgres://${PG_DATABASE_USER:-postgres}:${PG_DATABASE_PASSWORD:-postgres}@${PG_DATABASE_HOST:-db}:${PG_DATABASE_PORT:-5432}/default
       SERVER_URL: ${SERVER_URL:-http://localhost:3000}
       REDIS_URL: ${REDIS_URL:-redis://redis:6379}
-      DISABLE_DB_MIGRATIONS: ${DISABLE_DB_MIGRATIONS}
+      DISABLE_DB_MIGRATIONS: false
       DISABLE_CRON_JOBS_REGISTRATION: ${DISABLE_CRON_JOBS_REGISTRATION}
 
       STORAGE_TYPE: ${STORAGE_TYPE:-local}
@@ -24,8 +40,13 @@ services:
       APP_SECRET: ${APP_SECRET:-gardening_project_secret_2025}
       SIGN_IN_PREFILLED: true
       
-      # Enable French language support
-      FRONTEND_URL: http://localhost:3001
+      # Configure for embedded frontend
+      FRONTEND_URL: http://localhost:3000
+      FRONT_BASE_URL: http://localhost:3000
+      
+      # Enable detailed logging
+      LOG_LEVEL: debug
+      DEBUG: true
 
     depends_on:
       db:
@@ -38,7 +59,7 @@ services:
     restart: always
 
   worker:
-    image: twentycrm/twenty:${TAG:-latest}
+    image: twentycrm/twenty:v0.33.1
     volumes:
       - server-local-data:/app/packages/twenty-server/.local-storage
     command: ["yarn", "worker:prod"]
@@ -51,6 +72,10 @@ services:
 
       STORAGE_TYPE: ${STORAGE_TYPE:-local}
       APP_SECRET: ${APP_SECRET:-gardening_project_secret_2025}
+      
+      # Add missing frontend configuration
+      FRONTEND_URL: http://localhost:3000
+      FRONT_BASE_URL: http://localhost:3000
 
     depends_on:
       db:
@@ -60,18 +85,18 @@ services:
     restart: always
 
   # Custom frontend for gardening project (optional - uses embedded frontend by default)
-  frontend:
-    image: twentycrm/twenty-front:${TAG:-latest}
-    ports:
-      - "3001:3000"
-    environment:
-      REACT_APP_SERVER_BASE_URL: http://localhost:3000
-      # Language configuration
-      REACT_APP_DEFAULT_LOCALE: en
-    depends_on:
-      server:
-        condition: service_healthy
-    restart: always
+  # frontend:
+  #   image: twentycrm/twenty-front:v0.33.1
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     REACT_APP_SERVER_BASE_URL: http://localhost:3000
+  #     # Language configuration
+  #     REACT_APP_DEFAULT_LOCALE: en
+  #   depends_on:
+  #     server:
+  #       condition: service_healthy
+  #   restart: always
 
   db:
     image: postgres:16
