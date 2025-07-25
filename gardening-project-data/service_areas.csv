@@ -1,0 +1,6 @@
+area_name,description,zip_codes,volunteer_coverage,soil_characteristics,climate_zone,service_priority
+North Springfield,Established residential area with mature trees,62701;62704,High,Clay soil with good drainage,5b,High
+South Springfield,Newer developments with smaller lots,62702;62705,Medium,Mixed soil types,5b,Medium
+Central Springfield,Historic downtown area,62701;62703,High,Compacted urban soil,5b,High
+East Springfield,Rural transition area,62709;62710,Low,Sandy loam,5b,Low
+West Springfield,Suburban with larger properties,62706;62707;62708,Medium,Well-drained loam,5b,Medium

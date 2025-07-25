@@ -1,0 +1,11 @@
+name,email,phone,address,city,state,zip,property_size_sqft,current_grass_type,sun_conditions,soil_type,water_access,budget_range,timeline_preference,special_requests,status
+Sarah Johnson,sarah.johnson@email.com,555-0101,123 Maple Street,Springfield,IL,62701,800,Kentucky Bluegrass,Full Sun,Clay,Garden Hose,500-1000,Spring 2025,Pollinator friendly plants,Requested
+Michael Chen,mike.chen@email.com,555-0102,456 Oak Avenue,Springfield,IL,62702,1200,Tall Fescue,Partial Shade,Loam,Sprinkler System,1000-2000,Summer 2025,Low maintenance options,Requested
+Emily Rodriguez,emily.r@email.com,555-0103,789 Pine Boulevard,Springfield,IL,62703,600,Bermuda Grass,Full Sun,Sandy,Manual Watering,300-500,Fall 2025,Drought resistant plants,Requested
+David Thompson,d.thompson@email.com,555-0104,321 Cedar Lane,Springfield,IL,62704,1500,Zoysia,Mixed Sun/Shade,Clay-Loam,Drip Irrigation,2000-3000,Spring 2025,Native to Illinois only,Requested
+Lisa Park,lisa.park@email.com,555-0105,654 Birch Drive,Springfield,IL,62705,400,St. Augustine,Shade,Sandy Loam,Garden Hose,200-500,Any Time,Edible landscaping,Requested
+Robert Wilson,bob.wilson@email.com,555-0106,987 Elm Circle,Springfield,IL,62706,2000,Mixed Grass,Full Sun,Heavy Clay,Sprinkler System,1500-2500,Spring 2025,Privacy screening plants,Requested
+Amanda Foster,amanda.f@email.com,555-0107,147 Willow Street,Springfield,IL,62707,900,Buffalo Grass,Partial Sun,Loam,Rain Barrels,800-1200,Fall 2025,Butterfly garden,Requested
+James Mitchell,j.mitchell@email.com,555-0108,258 Poplar Avenue,Springfield,IL,62708,700,Fine Fescue,Partial Shade,Sandy Clay,Manual Watering,400-700,Summer 2025,Bird habitat focus,Requested
+Maria Santos,maria.santos@email.com,555-0109,369 Ash Boulevard,Springfield,IL,62709,1100,Perennial Ryegrass,Full Sun,Well-drained,Drip System,1200-1800,Spring 2025,Medicinal plants,Requested
+Thomas Brown,tom.brown@email.com,555-0110,741 Hickory Lane,Springfield,IL,62710,1800,Centipede Grass,Mixed Conditions,Clay,Soaker Hoses,2000-3000,Any Time,Demonstration garden,Requested

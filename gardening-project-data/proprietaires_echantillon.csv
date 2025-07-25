@@ -1,0 +1,11 @@
+nom,email,telephone,adresse,ville,province,code_postal,superficie_terrain_pi2,type_gazon_actuel,conditions_soleil,type_sol,acces_eau,gamme_budget,preference_echeancier,demandes_speciales,statut
+Sarah Johnson,sarah.johnson@email.com,555-0101,123 rue Maple,Springfield,IL,62701,800,Pâturin du Kentucky,Plein soleil,Argile,Tuyau d'arrosage,500-1000,Printemps 2025,Plantes amies des pollinisateurs,Demandé
+Michael Chen,mike.chen@email.com,555-0102,456 avenue Oak,Springfield,IL,62702,1200,Fétuque élevée,Ombre partielle,Terreau,Système d'arrosage,1000-2000,Été 2025,Options peu d'entretien,Demandé
+Emily Rodriguez,emily.r@email.com,555-0103,789 boulevard Pine,Springfield,IL,62703,600,Herbe des Bermudes,Plein soleil,Sableux,Arrosage manuel,300-500,Automne 2025,Plantes résistantes à la sécheresse,Demandé
+David Thompson,d.thompson@email.com,555-0104,321 ruelle Cedar,Springfield,IL,62704,1500,Zoysia,Soleil/Ombre mixte,Argile-Terreau,Irrigation goutte à goutte,2000-3000,Printemps 2025,Seulement indigènes de l'Illinois,Demandé
+Lisa Park,lisa.park@email.com,555-0105,654 promenade Birch,Springfield,IL,62705,400,Herbe de Saint-Augustin,Ombre,Terreau sableux,Tuyau d'arrosage,200-500,N'importe quand,Aménagement comestible,Demandé
+Robert Wilson,bob.wilson@email.com,555-0106,987 cercle Elm,Springfield,IL,62706,2000,Gazon mixte,Plein soleil,Argile lourde,Système d'arrosage,1500-2500,Printemps 2025,Plantes d'intimité,Demandé
+Amanda Foster,amanda.f@email.com,555-0107,147 rue Willow,Springfield,IL,62707,900,Herbe de buffle,Soleil partiel,Terreau,Barils de pluie,800-1200,Automne 2025,Jardin de papillons,Demandé
+James Mitchell,j.mitchell@email.com,555-0108,258 avenue Poplar,Springfield,IL,62708,700,Fétuque fine,Ombre partielle,Argile sableuse,Arrosage manuel,400-700,Été 2025,Habitat pour oiseaux,Demandé
+Maria Santos,maria.santos@email.com,555-0109,369 boulevard Ash,Springfield,IL,62709,1100,Ray-grass vivace,Plein soleil,Bien drainé,Système goutte,1200-1800,Printemps 2025,Plantes médicinales,Demandé
+Thomas Brown,tom.brown@email.com,555-0110,741 ruelle Hickory,Springfield,IL,62710,1800,Herbe centipède,Conditions mixtes,Argile,Tuyaux suintants,2000-3000,N'importe quand,Jardin de démonstration,Demandé

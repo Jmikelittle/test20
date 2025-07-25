@@ -1,0 +1,13 @@
+name,email,phone,role,expertise_level,availability,service_area,skills,volunteer_since,hours_logged,certifications,transportation
+Jennifer Adams,jen.adams@email.com,555-0201,Evaluator,Expert,Weekdays 9-5,North Springfield,Master Gardener;Soil Testing;Plant ID,2023-01-15,120,Master Gardener Certified,Own Vehicle
+Mark Williams,mark.w@email.com,555-0202,Worker,Intermediate,Weekends,South Springfield,Landscaping;Heavy Lifting;Tool Use,2023-03-20,85,None,Own Vehicle
+Susan Davis,susan.davis@email.com,555-0203,Both,Advanced,Flexible,Central Springfield,Native Plants;Design;Education,2022-05-10,200,Horticulture Degree,Own Vehicle
+Carlos Mendez,carlos.m@email.com,555-0204,Worker,Beginner,Evenings/Weekends,East Springfield,Enthusiasm;Learning,2024-01-05,25,None,Bicycle
+Rachel Green,rachel.green@email.com,555-0205,Evaluator,Expert,Mornings,West Springfield,Ecological Restoration;Botany,2022-08-30,180,PhD Botany,Own Vehicle
+Kevin Lee,kevin.lee@email.com,555-0206,Worker,Intermediate,Saturdays,North Springfield,Construction;Irrigation;Mulching,2023-06-12,95,None,Own Vehicle
+Patricia Moore,pat.moore@email.com,555-0207,Both,Advanced,Weekdays,South Springfield,Plant Propagation;Pruning;Pest ID,2021-04-18,350,Master Gardener Certified,Own Vehicle
+Daniel Kim,dan.kim@email.com,555-0208,Worker,Beginner,Sunday afternoons,Central Springfield,Photography;Documentation,2024-02-14,15,None,Public Transit
+Nicole Taylor,nicole.t@email.com,555-0209,Evaluator,Intermediate,Tuesday/Thursday,East Springfield,Soil Science;Water Management,2023-09-05,75,Soil Science Degree,Own Vehicle
+Ryan Murphy,ryan.murphy@email.com,555-0210,Both,Advanced,Flexible,West Springfield,Permaculture;Composting;Tool Maintenance,2022-11-22,275,Permaculture Certified,Own Vehicle
+Linda Johnson,linda.j@email.com,555-0211,Worker,Intermediate,Saturday mornings,North Springfield,Senior Group Coordination,2023-02-28,65,None,Own Vehicle
+Alex Chen,alex.chen@email.com,555-0212,Evaluator,Expert,Weekday evenings,South Springfield,Climate Adaptation;Native Ecosystems,2022-01-10,190,Environmental Science MS,Own Vehicle
