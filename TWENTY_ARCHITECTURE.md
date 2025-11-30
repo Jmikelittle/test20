@@ -143,7 +143,7 @@ src/
    export class PersonWorkspaceEntity {
      @WorkspaceField({ type: FieldMetadataType.FULL_NAME })
      name: FullNameMetadata;
-     
+
      @WorkspaceRelation({ type: RelationMetadataType.MANY_TO_ONE })
      company: CompanyWorkspaceEntity;
    }
@@ -157,7 +157,7 @@ src/
      async people() {
        return this.personService.findAll();
      }
-     
+
      @Mutation(() => PersonWorkspaceEntity)
      async createPerson(@Args('data') data: CreatePersonInput) {
        return this.personService.create(data);
@@ -173,7 +173,7 @@ src/
        @InjectRepository(PersonWorkspaceEntity)
        private personRepository: Repository<PersonWorkspaceEntity>
      ) {}
-     
+
      async findAll() {
        return this.personRepository.find();
      }
@@ -236,7 +236,7 @@ src/
    ```typescript
    function PeopleList() {
      const { data, loading } = useQuery(GET_PEOPLE);
-     
+
      if (loading) return <Loader />;
      return <Table data={data.people} />;
    }
